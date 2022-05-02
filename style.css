@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    word-break: break-word;
 }
 body{
     background-color: #2a2a2a;
@@ -295,6 +296,29 @@ hr{
 }
 .interetsAll i{
     color: #4DC0E2;
+}
+/**************************** h3Btn ***********************************/
+.h3Btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.h3Btn button{
+    border: none;
+    background-color: #fafafa;
+    color: #0D3E58;
+    font-size: 20px;
+    height: 45px;
+}
+/*************************** EYEMDP *******************************/
+#mdpEye{
+    display: flex;
+    align-items: center;
+    
+}
+#togglePassword{
+    margin-left: 10px;
+    cursor: pointer;
 }
 /****************** MEDIA ************************************/
 @media (max-width: 1000px) {
