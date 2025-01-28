@@ -1,39 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     word-break: break-word;
 }
-body{
+
+body {
     background-color: #2a2a2a;
 }
-main{
+
+main {
     display: flex;
     flex-direction: row;
     width: 1000px;
     margin: 0 auto;
     transition: all 0.5s;
 }
+
 /**************** BANNER LEFT ************************/
-.bannerLeft{
+.bannerLeft {
     width: 300px;
-    margin: 10px;
+    margin: 10px 0;
     padding: 10px;
     background-color: #0D3E58;
     color: white;
     transition: all 0.25s;
 }
-.bannerLeft.scroll{
+
+.bannerLeft.scroll {
     background-color: #fafafa;
     color: #2a2a2a;
 }
-.bannerRight.scroll{
+
+.bannerRight.scroll {
     background-color: #0D3E58;
     color: #fafafa;
 }
-.bannerLeft #presentation img{
+
+.bannerLeft #presentation img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -42,13 +49,20 @@ main{
     transition: all 0.3s ease-in-out;
     position: relative;
 }
-.imageAndLinks{
-    height: 230px;
+
+.imageAndLinks {
+    height: 220px;
 }
-#linkImage{
+
+.imageAndLinks img {
+    object-fit: cover;
+}
+
+#linkImage {
     width: 200px;
 }
-#linkImage a{
+
+#linkImage a {
     position: relative;
     top: -33px;
     right: -65px;
@@ -57,144 +71,200 @@ main{
     color: #fafafa;
     transition: all 0.3s ease-in-out;
 }
-#linkImage.scroll{
+
+#linkImage.scroll {
     color: #0D3E58;
 }
-.bannerLeft #presentation:hover img{
+
+.bannerLeft #presentation:hover img {
     border-radius: 0;
     /* filter: grayscale(100%); */
 }
-.bannerLeft #presentation:hover a{
+
+.bannerLeft #presentation:hover a {
     z-index: 1;
 }
 
-h1{
+h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: large;
 }
-h1.scroll{
+
+h1.scroll {
     color: #0D3E58;
 }
-h2.scroll{
+
+h2.scroll {
     color: #0D3E58;
 }
-h2{
+
+h2 {
     text-align: center;
     font-weight: 300;
 }
-hr{
+
+hr {
     color: #4DC0E2;
     margin-top: 10px;
 }
-.blocContactFormationLangues{
+
+.blocContactFormationLangues {
     margin: 20px 0;
 }
-#contact{
+
+#contact {
     display: flex;
     flex-direction: column;
 }
-#contact p{
-    
+
+#contact p {
+
     font-size: 14px;
     padding: 5px 0;
 }
-#formations{
+
+#formations {
     display: flex;
     flex-direction: column;
 }
-.formationName{
+
+.formationName {
     display: flex;
     flex-direction: column;
     margin: 5px 0;
 }
-.formationName p:last-child{
+
+.formationName p:last-child {
     font-weight: 100;
 }
-.formationName .yearBlue{
+
+.formationName .yearBlue {
     color: #4DC0E2;
 }
-.h3Left{
+
+.h3Left {
     text-transform: uppercase;
     padding: 5px 0;
 }
-#h3LeftContact.scroll{
+
+#h3LeftContact.scroll {
     color: #0D3E58;
-    
+
 }
-#h3LeftFormation.scroll{
+
+#h3LeftFormation.scroll {
     color: #0D3E58;
 }
-#h3LeftLangues.scroll{
+
+#h3LeftLangues.scroll {
     color: #0D3E58;
 }
-#h3RightProfil.scroll{
+
+#h3RightProfil.scroll {
     color: #fafafa;
 }
-#h3RightExperiences.scroll{
+
+#h3RightExperiences.scroll {
     color: #fafafa;
 }
-#h3RightLangages.scroll{
+
+#h3RightLangages.scroll {
     color: #fafafa;
 }
-#h3RightQualites.scroll{
+
+#h3RightQualites.scroll {
     color: #fafafa;
 }
-#h3RightInterets.scroll{
+
+#h3RightInterets.scroll {
     color: #fafafa;
 }
-.blockLangue{
-    padding: 15px 0;
+
+.blockLangue {
+    padding: 5px 0;
 }
+
+.qrCode {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.qrCode img {
+    width: 150px;
+    height: 150px;
+}
+
 /**************** BANNER RIGHT ************************/
-.bannerRight{
+.bannerRight {
     background-color: #fafafa;
     width: 700px;
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 0;
+    padding: 15px;
     transition: all 0.5s ease-in-out;
 }
-.h3Right{
+
+.h3Right {
     color: #0D3E58;
     margin: 0 0 20px 0;
     text-transform: uppercase;
     padding: 5px 0;
 }
-.h3Right.scroll{
+
+.h3Right.scroll {
     color: #fafafa;
 }
-.blocAllRight{
+
+.blocAllRight {
     padding: 10px;
 }
-#profil p{
+
+#profil {
+    margin-top: 10px;
+}
+
+#profil p {
     margin: 15px 0;
 }
-.blockExperience{
+
+.blockExperience {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 20px 0;
 }
-.blockExperienceLeft{
+
+.blockExperienceLeft {
     width: 300px;
     color: grey;
     font-weight: 500;
 }
-.blockExperienceRight{
+
+.blockExperienceRight {
     width: 600px;
+    margin-left: 10px;
 }
-.blockExperienceRight p:first-child{
+
+.blockExperienceRight p:first-child {
     color: #4DC0E2;
     font-weight: bold;
 }
-.langage{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+.langage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     color: grey;
     font-weight: 600;
     margin: 10px 0;
 }
+
+.langage p {
+    padding: 5px 0;
+}
+
 /************************* PROGRESS BAR **********************************/
 .progress {
     position: relative;
@@ -203,7 +273,8 @@ hr{
     background: #9cbab4;
     border-radius: 5px;
     overflow: hidden;
-  }
+}
+
 .progress_lang {
     position: relative;
     width: 250px;
@@ -211,61 +282,71 @@ hr{
     background: #9cbab4;
     border-radius: 5px;
     overflow: hidden;
-  }
+}
+
 #progress__fill_francais {
     width: 90%;
     height: 100%;
     background: #4DC0E2;
     transition: all 0.2s;
 }
+
 #progress__fill_anglais {
     width: 70%;
     height: 100%;
     background: #4DC0E2;
     transition: all 0.2s;
 }
+
 #progress__fill_allemand {
     width: 40%;
     height: 100%;
     background: #4DC0E2;
     transition: all 0.2s;
 }
+
 #progress__fill_html {
     width: 90%;
     height: 100%;
     background: #4DC0E2;
     transition: all 0.2s;
 }
+
 #progress__fill_css {
     width: 90%;
     height: 100%;
     background: #4DC0E2;
     transition: all 0.2s;
 }
+
 #progress__fill_javascript {
     width: 70%;
     height: 100%;
     background: #4DC0E2;
     transition: all 0.2s;
 }
+
 #progress__fill_angular {
     width: 70%;
     height: 100%;
     background: #4DC0E2;
     transition: all 0.2s;
 }
+
 #progress__fill_php {
     width: 50%;
     height: 100%;
     background: #4DC0E2;
     transition: all 0.2s;
 }
+
 #progress__fill_symfony {
     width: 30%;
     height: 100%;
     background: #4DC0E2;
     transition: all 0.2s;
 }
+
 .progress__text {
     position: absolute;
     top: 50%;
@@ -274,103 +355,124 @@ hr{
     font: bold 14px "Quicksand", sans-serif;
     color: #ffffff;
 }
+
 /***************************************************************/
-.qualitesAll{
+.qualitesAll {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+}
+
+.qualitesAll p {
+    padding: 5px 0;
+    text-align: left;
+}
+
+.interetsAll {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.qualitesAll p{
-    padding: 5px 40px;
-}
-.interetsAll{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.interetsAll p{
+
+.interetsAll p {
     width: 170px;
     padding: 5px 0;
 }
-.interetsAll i{
+
+.interetsAll i {
     color: #4DC0E2;
 }
+
 /**************************** h3Btn ***********************************/
-.h3Btn{
+.h3Btn {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.h3Btn button{
+
+.h3Btn button {
     border: none;
     background-color: #fafafa;
     color: #0D3E58;
     font-size: 20px;
     height: 45px;
 }
+
 /*************************** EYEMDP *******************************/
-#mdpEye{
+#mdpEye {
     display: flex;
     align-items: center;
-    
+
 }
-#togglePassword{
+
+#togglePassword {
     margin-left: 10px;
     cursor: pointer;
 }
+
 /****************** MEDIA ************************************/
 @media (max-width: 1000px) {
-    main{
+    main {
         flex-direction: column;
         width: 100%;
     }
-    .bannerLeft{
+
+    .bannerLeft {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
     }
-    .bannerRight{
+
+    .bannerRight {
         width: 100%;
         margin: 0;
     }
-    .blocAllRight{
+
+    .blocAllRight {
         width: 100%;
     }
-    .langage{
+
+    .langage {
         display: flex;
         flex-direction: column;
     }
+
     .progress {
         width: 100%;
     }
-    .blockExperienceLeft{
+
+    .blockExperienceLeft {
         padding-right: 5px;
     }
-    #linkImage a{
+
+    #linkImage a {
         top: -33px;
         right: -48px;
     }
-    #linkImage a{
+
+    #linkImage a {
         z-index: 1;
         color: #8d8d8d;
     }
 }
+
 @media (max-width: 627px) {
-    .qualitesAll{
+    .qualitesAll {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .interetsAll{
+
+    .interetsAll {
         flex-direction: column;
         align-items: center;
     }
-    .interetsAll p{
+
+    .interetsAll p {
         text-align: center;
     }
 }
-
